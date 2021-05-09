@@ -134,12 +134,6 @@ function healthMenu(health, armor, oxygen, hunger, thirst)
             elements = elements
         },
     function(data, menu)
-        if(data.current.value == 'money') then
-            TriggerEvent('Car:Start')
-        end
-        if(data.current.value == 'give') then
-            TriggerServerEvent('giveCard')
-        end
         if(data.current.value == 'close') then
             mainMenu()
         end
